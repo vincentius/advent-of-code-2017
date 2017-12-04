@@ -7,7 +7,6 @@ valid_ctr = 0
 
 for line in input.splitlines():
     perms = []
-    string_list = []
     for word in line.split():
         perms.append(combinations(word, len(word)))
 
@@ -29,7 +28,6 @@ valid_ctr = 0
 
 for line in input.splitlines():
     perms = []
-    string_list = []
     for word in line.split():
         perms.append(set(permutations(word)))
 
