@@ -6,13 +6,7 @@ invalid_ctr = 0
 valid_ctr = 0
 
 for line in input.splitlines():
-    perms = []
-    for word in line.split():
-        perms.append(combinations(word, len(word)))
-
-    perms = tuple(chain(*perms))
-
-    if len(perms) > len(set(perms)):
+    if len(line.split()) > len(set(line.split())):
         invalid_ctr += 1
     else:
         valid_ctr += 1
@@ -20,7 +14,6 @@ for line in input.splitlines():
 print("*")
 print(f"Invalid: {invalid_ctr}")
 print(f"Valid: {valid_ctr}")
-
 
 # **
 invalid_ctr = 0
