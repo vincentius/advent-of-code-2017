@@ -1,3 +1,4 @@
+# *
 inp = """"""
 
 inp = inp.splitlines()
@@ -15,6 +16,7 @@ while True:
 
 print(step)
 
+# **
 inp = """"""
 
 inp = inp.splitlines()
